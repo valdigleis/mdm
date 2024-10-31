@@ -1,10 +1,34 @@
-\chapter{Conhecendo Haskell}\label{cap:IntroLean}
+\chapter{Conhecendo Haskell}\label{cap:IntroHaskell}
 
 \epigraph{``-Comece pelo começo'', disse o Rei de maneira severa,\\ ``-E continue até chegar ao fim, então pare!''}{Lewis Carroll, Alice no País das Maravilhas.}
 
-\section{O Ecosistema do Haskell}
+\section{O que é Haskell?}\label{sec:SobreHaskell}
 
-\section{E por que Lean?}
+
+Haskell como dito em \cite{learnHaskell2011}, é uma linguagem de programação funcional, pura, de alto nível e para propósito geral\footnote{Famosa inclusive por ser a base do sistema de \textit{tiling windows manager} chamado Xmonad, detalhes em \url{https://xmonad.org/}.}. O projeto que deu origem a linguagem haskell remonta ao final dos anos 1980 e início dos anos 1990, a linguagem recebeu seu nome para em homenagem o lógico e matemático americano, Haskell Curry (1900--1982), a linguagem foi desenvolvida por um comitê com o objetivo de unificar várias linguagens funcionais da época, como Miranda e ML \cite{haskell-history}. O objetivo grandioso era criar uma linguagem funcional que fosse ser o padrão mais adequado possível, tanto para o meio de pesquisa (acadêmico) quanto para o ambiente de desenvolvimento prático (coorporativo e de mercado).
+
+A linguagem Haskell combina diversas caracteristicas presentes em outras linguagens com características próprias. Uma caracterista famosa usando em Haskell (mas que não foi criado em Haskell), é por exemplo, o uso de ``\textit{lazy evaluation}'' (avaliação preguiçosa em português), tal característica faz com que as expressões sejam avaliadas (ou computadas) apenas quando realmente forem necessárias, o que possibilita entre outras coisas, ser possível criar estruturas de dados capazes de representar quantidades infinitas de dados, essa característica também possibilita que seja possível otimiza o uso da memória. Já do ponto de visto particilar de Haskell, ela foi a linguagem responsável por introduz conceitos como ``monads'' para as linguagens de programação\footnote{O conceito de matemática monads já era conhecido antes de sua implementação na linguagem Haskell, detalhes em \cite{beginningHaskell}.}, os monads são estruturas que permitem lidar de forma pura e controlado, com as operações sequenciais e os dispositivos de I/O, mantendo o código limpo e modular.
+
+%\section{Linguagens Funcionais}
+
+%Bem, a melhor forma de tentar entender o que é uma linguagem puramente funcional é entender a diferença de tal paradigma para o paradigma imperativo\footnote{O paradigma imperativo é o paradigma que rege linguagens como C \cite{paulo2009algoritmos} ou Python \cite{pythonOrg}.}. A principal diferença entre esses paradigmas é que, no paradigma imperativo o verbo que está na mente do programador enquanto escreve o código é o verbo ``fazer'' e a entidade dominante, ou seja, nesse paradigma o programador através do programa diz ao computador como fazer as coisas, por outro lado, no paradigma funcional o verbo predominante na mente do programador é o verbo ``ser'', isto é, no paradigma funcional o programador descreve ao computador através dos algoritmo como as coisas são. Outras caracteristicas marcantes nas linguagens puramente funcionais são:
+
+%\begin{itemize}
+%  \item Ausência de controle de fluxo de repetição;
+%  \item As funções não possuem efeito colaterais e
+%  \item Não existe mudança de estado.
+%\end{itemize}
+
+%No início, para desenvolvedores tendo o primeiro contato com esse tipo de paradigma pode ser que essas cacateristica pareçam ser limitante da linguagem, mas isso, na verdade, traz consequências muito interessantes e positivas. Por exemplo, se uma função não possui efeito colaterais, então é evidente que a chamada sobre os mesmos parâmetros de entrada, sempre irá retorna a mesma saída. Isso é característica é chamada, como dito  em \cite{learnHaskell2011} de transparência referencial e, ela permite que o compilador da linguagem possa ``raciocinar'' sobre o comportamento do programa, o que também facilita a dedução (e até mesmo a prova) de que um programa haskell está correto\footnote{Correto aqui diz respeito exatamente a noção de corretude apresentada no trabalho de .}.
+
+%Nesse texto irei assumir que o leitor ainda não teve qualquer tipo de contato com a linguagem Haskell
+
+%\section{E por que Haskell?}
+
+%\section{O Ecosistema do Haskell}\label{sec:EcoHaskell}
+
+
+
 
 
 
